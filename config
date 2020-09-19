@@ -214,6 +214,11 @@ focus_follows_mouse no
 bindsym $mod+KP_Add exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
 bindsym $mod+KP_Subtract exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
 bindsym $mod+XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
+bindsym XF86Calculator exec --no-startup-id "xfce4-terminal -e qalc"
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
+
 bindsym $mod+l exec ~/.config/i3/lock.sh
 bindsym Print --release exec "scrot -s ~/Pictures/Screenshots/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
 bindsym Shift+Print --release exec "scrot ~/Pictures/Screenshots/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
