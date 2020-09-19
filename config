@@ -252,3 +252,6 @@ for_window [class="rhythmbox"] focus
 bindsym $mod+F10 workspace $ws10; exec --no-startup-id rhythmbox;
 
 bindsym $mod+F11 workspace $ws7; exec ~/applications/bank/nosqlbooster4mongo-5.2.12.AppImage
+
+exec --no-startup-id ~/.config/i3/i3-battery-popup.sh -L 15
+for_window [title="Battery Warning"] sticky enable
