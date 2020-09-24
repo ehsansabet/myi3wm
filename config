@@ -260,3 +260,6 @@ bindsym $mod+F11 workspace $ws7; exec ~/applications/bank/nosqlbooster4mongo-5.2
 
 exec --no-startup-id ~/.config/i3/i3-battery-popup.sh -L 15
 for_window [title="Battery Warning"] sticky enable
+
+# Remove browsers border
+for_window [window_role="browser"] border none
