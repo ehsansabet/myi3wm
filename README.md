@@ -2,12 +2,15 @@
 I drank coffee and customized this config!
 
 ## Dependencies
-* `i3-sensible-terminal`
+* `xfce4-terminal`
+* `rofi`
+* `i3blocks`
+* `i3lock`
+* `nm-applet`
 * `feh`
 * `scrot`
 * `xclip`
 * `kbdd`
 * `parcellite`
-* `xcompmgr`
 * `numlockx`
 * `thunar`
